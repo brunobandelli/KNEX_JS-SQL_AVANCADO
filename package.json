@@ -1,0 +1,23 @@
+{
+  "name": "knex_js-sql_avancado",
+  "version": "1.0.0",
+  "description": "KNEX JS COM SQL AVANÇADO NO NODE JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunobandelli/KNEX_JS-SQL_AVANCADO.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brunobandelli/KNEX_JS-SQL_AVANCADO/issues"
+  },
+  "homepage": "https://github.com/brunobandelli/KNEX_JS-SQL_AVANCADO#readme",
+  "dependencies": {
+    "knex": "^0.95.6",
+    "mysql2": "^2.2.5"
+  }
+}
