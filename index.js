@@ -31,7 +31,7 @@ database.select(["id","preco"]).table("games").then(data => {
 })
 */
 
-
+/*NESTED QUERYS
 database.insert({nome: "Beyblade", preco: 30}).into("games").then(data => {
     database.select(["id","preco"]).table("games").then(data => {
         console.log(data)
@@ -41,3 +41,4 @@ database.insert({nome: "Beyblade", preco: 30}).into("games").then(data => {
 }).catch(err => {
     console.log(err);
 });
+*/
