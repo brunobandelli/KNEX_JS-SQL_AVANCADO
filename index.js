@@ -78,3 +78,22 @@ database.where({id: 32}).update({preco: 10}).table("games").then(data => {
 })
 */
 
+/*ORDERBY
+database.select().table("games").orderBy("nome","asc").then(data => {
+    console.log(data);
+}).catch(err => {
+    console.log(err);
+})
+*/
+
+/*ASSOCIATED INSERTS
+database.insert({
+    nome: "RIOT",
+    game_id: 14
+}).table("estudios").then(data => {
+    console.log(data)
+}).catch(err => {
+    console.log(err)
+})
+*/
+
