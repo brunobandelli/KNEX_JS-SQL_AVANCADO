@@ -134,4 +134,35 @@ database.select(["games.*", "estudios.nome as estudio_nome"]).table("games").inn
     console.log(err);
 })
 */
+/* M PARA M
+database.select([
+        "estudios.nome as estudio_nome",
+        "games.nome as game_nome",
+        "games.preco"
+    ]).table("games_estudios")
+    .innerJoin("games", "games.id", "games_estudios.game_id")
+    .innerJoin("estudios", "estudios.id", "games_estudios.estudio_id")
+    .where("estudios.id", 11).then(data => {
+    console.log(data);
+}).catch(err => {
+    console.log(err);
+});
+*/
 
+/*TRANSACTIONS
+async function testeTransacao(){
+
+    try{
+        await database.transaction(async trans => {
+            await database.insert({nome: "Qualquer nome"}).table("estudios");
+            await database.insert({nome: "Pyxerelia"}).table("estudios");
+            await database.insert({nome: "Mojang"}).table("estudios");
+            await database.insert({nome: "Gearbox"}).table("estudios")
+        });
+    }catch(err){
+        console.log(err);
+    }
+}
+
+testeTransacao();
+*/
